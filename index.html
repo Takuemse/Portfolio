@@ -3,143 +3,234 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💻 Takudzwa Musemwas Portfolio 💻</title>
+    <title>💻 Takudzwa Musemwa's Portfolio 💻</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- Navbar menu -->
-    
-        <nav class="navbar">
-        <div class="logo">Takudzwa</div>
-        <div class="nav-links">
-             <ul class="nav-list">
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="services">Services</a>
-            </li>
-            <li>
-                <a href="contacts">Contact</a>
-            </li>
-        </ul>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Takudzwa<span class="logo-dot">.</span></div>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+            <ul class="nav-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
     </nav>
-       </div>
 
-        <!-- Hero main -->
-         <div class="grid-container">
-            <div class="img">
-                <img src="images/programmer.jpeg" alt="My Portfolio" width="400" height="400">
-            </div>
-            <div class="grid-container-info">
-                <h1>Hello<span class="name">,</span> I'm <span class="name">Takudzwa</span></h1>
-                <p class="text">I'm a Software Developer,Product Designer and also a Entreprenuer</p>
-                <p class="text">Come through so that we turn your ideas to feature tech solutions for more...</p>
-                <button class="btn">Get in Touch</button>
-            </div>
-         </div>
-       <!-- About Section -->
-<section class="about">
-
-    <h2 class="about-title"><span class="name">About </span>Me</h2>
-
-    <div class="about-grid">
-
-        <!-- Left: Text -->
-        <div class="about-text">
-            <h3><span class="name">What I </span>Do</h3>
-            <p class="text">
-                I am a Software Developer and Product Designer passionate about
-                building digital solutions that solve real-world problems.
-                I focus on creating clean, responsive, and user-friendly applications.
-            </p>
-               
-              
+    <!-- Hero -->
+    <div class="grid-container">
+        <div class="img fade-in">
+            <img src="images/programmer.jpeg" alt="Takudzwa — Software Developer & Product Designer">
         </div>
-
-        <!-- Right: Image -->
-        <div class="about-image">
-            <img src="images/tat.jpeg" alt="">
-         
+        <div class="grid-container-info slide-in">
+            <h1>Hello<span class="name">,</span> I'm <span class="name">Takudzwa</span></h1>
+            <p class="text">I'm a Software Developer, Product Designer and also an Entrepreneur.</p>
+            <p class="text">Come through so that we turn your ideas into future tech solutions.</p>
+            <button class="btn"><a href="#contact">Hire Me</a></button>
         </div>
-
     </div>
 
-</section>
-<!-- Services Section -->
- <section class="services">
-    <h2><span class="name">Our</span> Services</h2>
-    <p class="subtitle">This are my services to you</p>
-
-    <div class="service-container">
-        
-        <div class="card">
-            <div class="icon">💎</div>
-            <h3 class="sub">Development</h3>
-            <p>We build modern and responsive websites using clean code.</p>
+    <!-- About -->
+    <section id="about" class="about">
+        <h2 class="about-title"><span class="name">About </span>Me</h2>
+        <div class="about-grid">
+            <div class="about-text">
+                <p class="text">
+                    I am a Software Developer and Product Designer passionate about
+                    building digital solutions that solve real-world problems.
+                    I focus on creating clean, responsive, and user-friendly applications.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="images/tat.jpeg" alt="Takudzwa">
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="icon">💚</div>
-            <h3 class="sub">Design</h3>
-            <p>Creative and user-friendly designs that stand out.</p>
+    <!-- Services -->
+    <section id="services" class="services">
+        <h2><span class="name">My</span> Services</h2>
+        <p class="subtitle">What I offer</p>
+        <div class="service-container">
+            <div class="card">
+                <div class="icon">💻</div>
+                <h3>Development</h3>
+                <p>Modern responsive websites.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🎨</div>
+                <h3>Design</h3>
+                <p>Clean UI/UX designs.</p>
+            </div>
+            <div class="card">
+                <div class="icon">🚀</div>
+                <h3>SEO</h3>
+                <p>Boost your visibility online.</p>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <div class="icon">🌍</div>
-            <h3 class="sub">SEO</h3>
-            <p>Improve your visibility and rank better on search engines.</p>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2><span class="name">My</span> Projects</h2>
+        <p class="subtitle">Some of my recent work</p>
+
+        <div class="projects-list">
+
+            <!-- Zuva Rescue -->
+            <div class="project-row">
+                <div class="project-meta">
+                    <span class="project-tag">Mobile App · UX/Product Design</span>
+                </div>
+                <div class="project-main">
+                    <div class="project-text">
+                        <h3>Zuva Rescue</h3>
+                        <p>Zimbabwe's first on-demand roadside rescue app — connecting stranded drivers with tow truck operators and mobile mechanics, anytime, anywhere.</p>
+                        <a href="zuva_rescue_ux_case_study_v2.html" class="project-link">View Project <span>→</span></a>
+                    </div>
+                    <div class="project-visual zuva-visual">
+                        <div class="project-mockup">
+                            <div class="mock-screen">
+                                <div class="mock-bar"></div>
+                                <div class="mock-icon">🚨</div>
+                                <div class="mock-text-line"></div>
+                                <div class="mock-text-line short"></div>
+                                <div class="mock-btn-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ZimHustle Pro -->
+            <div class="project-row">
+                <div class="project-meta">
+                    <span class="project-tag">Super App · Product Design</span>
+                </div>
+                <div class="project-main">
+                    <div class="project-text">
+                        <h3>ZimHustle Pro</h3>
+                        <p>A super app for Zimbabwean hustlers and SMEs — buy, sell, grow, and connect in one powerful platform.</p>
+                        <a href="#" class="project-link">View Project <span>→</span></a>
+                    </div>
+                    <div class="project-visual hustle-visual">
+                        <div class="project-mockup">
+                            <div class="mock-screen">
+                                <div class="mock-bar"></div>
+                                <div class="mock-icon">⚡</div>
+                                <div class="mock-text-line"></div>
+                                <div class="mock-text-line short"></div>
+                                <div class="mock-btn-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Website -->
+            <div class="project-row">
+                <div class="project-meta">
+                    <span class="project-tag">Portfolio · Frontend Development</span>
+                </div>
+                <div class="project-main">
+                    <div class="project-text">
+                        <h3>Portfolio Website</h3>
+                        <p>This very site — my personal developer portfolio. Built from scratch with HTML & CSS, designed to stand out.</p>
+                        <a href="#" class="project-link">View Project <span>→</span></a>
+                    </div>
+                    <div class="project-visual portfolio-visual">
+                        <div class="project-mockup">
+                            <div class="mock-screen">
+                                <div class="mock-bar"></div>
+                                <div class="mock-icon">🌐</div>
+                                <div class="mock-text-line"></div>
+                                <div class="mock-text-line short"></div>
+                                <div class="mock-btn-mini"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-    </div>
-</section>
-
-<!-- Contact Section -->
- <section class="main-container">
-        
+    <!-- Contact -->
+    <section id="contact" class="main-container">
         <header>
-            <h1> <span class="name">Contact </span>Me</h1>
-            <a href="" class="email-link"><span class="">takudzwamse@</span>gmail.com</a>
+            <h1><span class="name">Contact </span>Me</h1>
+            <a href="mailto:takudzwamse@gmail.com" class="email-link">takudzwamse@gmail.com</a>
             <p>Feel free to contact me with any inquiries or questions!</p>
         </header>
-
-        <form>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <div class="row">
                 <div class="input-group">
-                    <label class="message" for="name">Name</label>
-                    <input type="text" placeholder="Name" name="name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name" required>
                 </div>
                 <div class="input-group">
-                    <label class="message" for="email">Email Address</label>
-                    <input type="email" placeholder="Email Adress" name="email">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Your email" required>
                 </div>
             </div>
-
             <div class="input-group full-width">
                 <label for="message">Message</label>
-                <textarea class="message" placeholder="Message" name="message"rows="4"></textarea>
+                <textarea id="message" name="message" class="message" placeholder="Your message..." rows="4" required></textarea>
             </div>
-
             <div class="button-container">
                 <button type="submit">Submit</button>
             </div>
         </form>
-
-    <footer class="social-links">
-    <a href="#" class="fa-whatsapp"></a>
-    <a href="#" class="twitter">𝕏</a>
-    <a href="#" class="instagram">ig</a>
-    
-</footer>
-         
-        
-         
-
     </section>
 
-    
+    <!-- Footer -->
+    <footer class="social-links">
+        <div class="footer-brand">Takudzwa<span class="logo-dot">.</span></div>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/takudzwa-william-musemwa-559000240/" target="_blank" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Takuemse" target="_blank" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://wa.me/263773317894" target="_blank" title="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="footer-copy">&copy; 2026 Takudzwa. All rights reserved.</p>
+    </footer>
+
+    <!-- Mobile Nav JS -->
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks  = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            hamburger.classList.toggle('open', isOpen);
+            hamburger.setAttribute('aria-expanded', isOpen);
+        });
+
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('open');
+                hamburger.classList.remove('open');
+                hamburger.setAttribute('aria-expanded', false);
+            });
+        });
+    </script>
+
 </body>
 </html>
-
- 
