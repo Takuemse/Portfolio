@@ -1,6 +1,4 @@
-/* =====================
-   RESET & BASE
-   ===================== */
+
 *, *::before, *::after {
     margin: 0;
     padding: 0;
@@ -37,9 +35,6 @@ img {
 }
 
 
-/* =====================
-   ANIMATIONS
-   ===================== */
 @keyframes fadeIn {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -179,9 +174,7 @@ img {
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
 
-/* =====================
-   HERO
-   ===================== */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -241,9 +234,6 @@ img {
 }
 
 
-/* =====================
-   ABOUT
-   ===================== */
 .about {
     padding: 70px 40px;
     text-align: center;
@@ -280,9 +270,7 @@ img {
 }
 
 
-/* =====================
-   SERVICES
-   ===================== */
+
 .services {
     text-align: center;
     padding: 60px 20px;
@@ -342,9 +330,7 @@ img {
 }
 
 
-/* =====================
-   PROJECTS
-   ===================== */
+
 .projects {
     text-align: center;
     padding: 70px 24px;
@@ -512,9 +498,7 @@ img {
 }
 
 
-/* =====================
-   CONTACT
-   ===================== */
+
 .main-container {
     width: 100%;
     max-width: 800px;
@@ -615,9 +599,6 @@ button[type="submit"]:hover {
 }
 
 
-/* =====================
-   FOOTER
-   ===================== */
 .social-links {
     margin-top: 60px;
     background-color: var(--orange);
@@ -672,9 +653,6 @@ button[type="submit"]:hover {
 }
 
 
-/* =====================
-   RESPONSIVE BREAKPOINTS
-   ===================== */
 
 /* Large tablets (≤1024px) */
 @media (max-width: 1024px) {
