@@ -59,9 +59,7 @@ img {
 .slide-in { animation: slideIn 0.8s ease 0.2s both; }
 
 
-/* =====================
-   NAVBAR
-   ===================== */
+
 .navbar {
     display: flex;
     justify-content: space-between;
